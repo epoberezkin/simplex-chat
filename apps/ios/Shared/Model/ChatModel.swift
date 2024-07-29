@@ -111,6 +111,18 @@ final class ChatModel: ObservableObject {
     @Published var pasteboardHasStrings: Bool = UIPasteboard.general.hasStrings
     @Published var networkInfo = UserNetworkInfo(networkType: .other, online: true)
 
+    var objectUpdateCount: Int = .zero
+    var bag = Set<AnyCancellable>()
+
+    init() {
+        objectWillChange
+            .sink {
+                self.objectUpdateCount += 1
+                logger.debug("🔥 \(self.objectUpdateCount)")
+            }
+            .store(in: &bag)
+    }
+
     var messageDelivery: Dictionary<Int64, () -> Void> = [:]
 
     var filesToDelete: Set<URL> = []

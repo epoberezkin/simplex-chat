@@ -77,6 +77,9 @@ struct ChatView: View {
                         )
                 }
                 floatingButtons(counts: floatingButtonModel.unreadChatItemCounts)
+                Button("Send objectWillChange") { chatModel.objectWillChange.send() }
+                    .buttonStyle(BorderedProminentButtonStyle())
+                    .padding()
             }
             connectingText()
             ComposeView(
@@ -255,7 +258,7 @@ struct ChatView: View {
             }
         }
     }
-    
+
     private func initChatView() {
         let cInfo = chat.chatInfo
         // This check prevents the call to apiContactInfo after the app is suspended, and the database is closed.
