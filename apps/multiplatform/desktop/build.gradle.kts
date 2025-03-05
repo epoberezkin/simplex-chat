@@ -60,7 +60,7 @@ compose {
         windows {
           packageName = "SimpleX"
           iconFile.set(project.file("src/jvmMain/resources/distribute/simplex.ico"))
-          console = false
+          console = true
           perUserInstall = false
           dirChooser = true
           shortcut = true
