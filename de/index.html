@@ -183,9 +183,9 @@
                             
                                 <li><a href="/docs/simplex.html" class=" lg:px-[20px] inline-block whitespace-nowrap">SimpleX-Plattform</a></li>
                             
-                                <li><a href="/docs/directory.html" class=" lg:px-[20px] inline-block whitespace-nowrap">SimpleX-Verzeichnisdienst</a></li>
+                                <li><a href="/docs/business.html" class=" lg:px-[20px] inline-block whitespace-nowrap">SimpleX für geschäftliche Anwendungen</a></li>
                             
-                                <li><a href="/docs/android.html" class=" lg:px-[20px] inline-block whitespace-nowrap">Zugriff auf Android-Dateien</a></li>
+                                <li><a href="/docs/directory.html" class=" lg:px-[20px] inline-block whitespace-nowrap">SimpleX-Verzeichnisdienst</a></li>
                             
                                 <li><a href="/docs/sql.html" class=" lg:px-[20px] inline-block whitespace-nowrap">Zugriff auf die Chat-Datenbank</a></li>
                             
@@ -194,8 +194,6 @@
                                 <li><a href="/docs/xftp-server.html" class=" lg:px-[20px] inline-block whitespace-nowrap">Den XFTP-Server hosten</a></li>
                             
                                 <li><a href="/docs/webrtc.html" class=" lg:px-[20px] inline-block whitespace-nowrap">WebRTC-Server</a></li>
-                            
-                                <li><a href="/docs/translations.html" class=" lg:px-[20px] inline-block whitespace-nowrap">SimpleX Chat übersetzen</a></li>
                             
                                 <li><a href="/downloads/" class=" lg:px-[20px] inline-block whitespace-nowrap">Downloads</a></li>
                             
@@ -208,6 +206,14 @@
 
                             <hr class=" h-[1px] w-full dark:opacity-[0.1]">
 
+                            <li><a href="/docs/translations.html"
+                                class="lg:px-[20px] flex items-center gap-1"
+                                >SimpleX Chat übersetzen
+                            </a></li>
+                            <li><a href="/docs/android.html"
+                                class="lg:px-[20px] flex items-center gap-1"
+                                >Zugriff auf Android-Dateien
+                            </a></li>
                             <li><a href="https://github.com/simplex-chat/simplex-chat/blob/stable/apps/simplex-bot-advanced/Main.hs"
                                 target="_blank" class="lg:px-[20px] flex items-center gap-1"
                                 >Beispiel für einen Chatbot
@@ -693,7 +699,7 @@ window.addEventListener('scroll',changeHeaderBg);
     Trail of Bits untersuchte im November 2022 die kryptografischen und Netzwerk-Komponenten der SimpleX-Plattform. Lesen Sie mehr dazu in der <a href="/blog/20221108-simplex-chat-v4.2-security-audit-new-website.html">Ankündigung</a>.
 </p>
 <p>
-    Trail of Bits reviewed cryptographic design of SimpleX network protocols in July 2024. <a href="/blog/20241014-simplex-network-v6-1-security-review-better-calls-user-experience.html">Read more</a>.
+    Trail of Bits hat das kryptografische Design des Netzwerk-Protokolls von SimpleX im Juli 2024 überprüft. <a href="/blog/20241014-simplex-network-v6-1-security-review-better-calls-user-experience.html">Hier finden Sie weitere Informationen dazu</a>.
 </p>
                         </div>
                     </div>
@@ -1510,7 +1516,7 @@ window.addEventListener('scroll',changeHeaderBg);
                         <h3 class="text-grey-black dark:text-white text-[18px] my-4 font-bold leading-[26px] tracking-[0.01em] text-center">Zwei Schichten der<br>Ende-zu-Ende-Verschlüsselung</h3>
                         <div class="flex-1 py-3 flex flex-col gap-3">
                             
-                            <p class="text-grey-black dark:text-white text-[14px] text-center">Double-Ratchet-Protokoll —<br>Off-the-Record-Nachrichten mit Perfect <span data-glossary="tooltip-forward-secrecy" class="glossary-term">Forward secrecy</span> und Einbruchsresistenz.</p>
+                            <p class="text-grey-black dark:text-white text-[14px] text-center">Double-Ratchet-Protokoll —<br>Off-the-Record-Nachrichten mit Perfect <span data-glossary="tooltip-forward-secrecy" class="glossary-term">Forward secrecy</span>, Abstreitbarkeit und Wiederherstellung nach einer Kompromittierung.</p>
                             
                             <p class="text-grey-black dark:text-white text-[14px] text-center">NaCL-Kryptobox in jeder Warteschlange, um eine Korrelation des Datenverkehrs zwischen Nachrichtenwarteschlangen zu verhindern, falls TLS kompromittiert wurde.</p>
                             

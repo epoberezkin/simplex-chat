@@ -175,9 +175,9 @@
                             
                                 <li><a href="/docs/simplex.html" class=" lg:px-[20px] inline-block whitespace-nowrap">SimpleX platform</a></li>
                             
-                                <li><a href="/docs/directory.html" class=" lg:px-[20px] inline-block whitespace-nowrap">SimpleX Directory Service</a></li>
+                                <li><a href="/docs/business.html" class=" lg:px-[20px] inline-block whitespace-nowrap">SimpleX for business</a></li>
                             
-                                <li><a href="/docs/android.html" class=" lg:px-[20px] inline-block whitespace-nowrap">Accessing Android files</a></li>
+                                <li><a href="/docs/directory.html" class=" lg:px-[20px] inline-block whitespace-nowrap">SimpleX Directory Service</a></li>
                             
                                 <li><a href="/docs/sql.html" class=" lg:px-[20px] inline-block whitespace-nowrap">Accessing chat database</a></li>
                             
@@ -186,8 +186,6 @@
                                 <li><a href="/docs/xftp-server.html" class=" lg:px-[20px] inline-block whitespace-nowrap">Host XFTP Server</a></li>
                             
                                 <li><a href="/docs/webrtc.html" class=" lg:px-[20px] inline-block whitespace-nowrap">WebRTC servers</a></li>
-                            
-                                <li><a href="/docs/translations.html" class=" lg:px-[20px] inline-block whitespace-nowrap">Translate SimpleX Chat</a></li>
                             
                                 <li><a href="/downloads/" class=" lg:px-[20px] inline-block whitespace-nowrap">Downloads</a></li>
                             
@@ -200,6 +198,14 @@
 
                             <hr class=" h-[1px] w-full dark:opacity-[0.1]">
 
+                            <li><a href="/docs/translations.html"
+                                class="lg:px-[20px] flex items-center gap-1"
+                                >Translate SimpleX Chat
+                            </a></li>
+                            <li><a href="/docs/android.html"
+                                class="lg:px-[20px] flex items-center gap-1"
+                                >Accessing Android files
+                            </a></li>
                             <li><a href="https://github.com/simplex-chat/simplex-chat/blob/stable/apps/simplex-bot-advanced/Main.hs"
                                 target="_blank" class="lg:px-[20px] flex items-center gap-1"
                                 >Chat bot example
@@ -678,6 +684,10 @@ window.addEventListener('scroll',changeHeaderBg);
                                                 </li>
                                             
                                                 <li>
+                                                    <a class="" href="/docs/business.html">SimpleX for business</a>
+                                                </li>
+                                            
+                                                <li>
                                                     <a class="" href="/docs/directory.html">SimpleX Directory Service</a>
                                                 </li>
                                             
@@ -868,8 +878,8 @@ window.addEventListener('scroll',changeHeaderBg);
 </code></pre>
 <h2 id="openssl-on-macos" tabindex="-1">OpenSSL on MacOS</h2>
 <p>MacOS comes with LibreSSL as default, OpenSSL must be installed to compile SimpleX from source.</p>
-<p>OpenSSL can be installed with <code>brew install openssl@1.1</code></p>
-<p>You will have to add <code>/opt/homebrew/opt/openssl@1.1/bin</code> to your PATH in order to have things working properly</p>
+<p>OpenSSL can be installed with <code>brew install openssl@3.0</code></p>
+<p>You will have to add <code>/opt/homebrew/opt/openssl@3.0/bin</code> to your PATH in order to have things working properly</p>
 <h2 id="project-branches" tabindex="-1">Project branches</h2>
 <p><strong>In simplex-chat repo</strong></p>
 <ul>
